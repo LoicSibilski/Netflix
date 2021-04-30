@@ -1,0 +1,39 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    display: flex;
+    padding: 50px;
+    margin-top: 50px;
+}
+  
+.box-item {
+    background-color: black;
+    height: 120px;
+    margin: 0 10px 0 10px;
+    position: relative;
+    display: block;
+    flex: 1 1 0px;
+    transition: transform 500ms;
+}
+
+.container:hover .box-item {
+    transform: translateX(-25%);
+}
+  
+.box-item:hover ~ .box-item {
+    transform: translateX(25%);
+}
+  
+.container .box-item:hover {
+    transform: scale(1.5);
+    z-index: 1;
+}
+
+.box-item img {
+    display: block;
+    max-width: 100%;
+}
