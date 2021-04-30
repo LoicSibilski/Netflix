@@ -4,10 +4,19 @@
     padding: 0;
 }
 
+body {
+    background-color: black;
+}
+
+.section {
+    margin-top: 50px;
+}
+
 .container {
     display: flex;
-    padding: 50px;
-    margin-top: 50px;
+    padding: 30px;
+    padding-left: 60px;
+    padding-right: 60px;
 }
   
 .box-item {
