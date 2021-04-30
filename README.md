@@ -4,7 +4,7 @@ Travail réalisé par Loïc, Najib et Justine.
 
 Reproduction plus ou moins fidèle du site Netflix.
 
-Pages chosies :
+Pages choisies :
 - page d'inscription et de connexion
 - page d'accueil avec le choix du profil
 - page de sélection du film
