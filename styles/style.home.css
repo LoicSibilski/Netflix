@@ -6,6 +6,7 @@
 
 body {
     background-color: black;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
 .section {
@@ -17,6 +18,14 @@ body {
     padding: 30px;
     padding-left: 60px;
     padding-right: 60px;
+    color: white;
+}
+
+.container-title {
+    display: flex;
+    padding-left: 60px;
+    padding-right: 60px;
+    color: white;
 }
   
 .box-item {
@@ -45,10 +54,6 @@ body {
 .box-item img {
     display: block;
     max-width: 100%;
-}
-
-section {
-    margin-top: 450px;
 }
 
 .video-responsive {
