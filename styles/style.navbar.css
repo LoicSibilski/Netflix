@@ -1,0 +1,43 @@
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+.navbar {
+    background-color:rgba(20, 20, 20, .6);
+    color: white;
+    display: flex;
+    justify-content: left;
+    height: 70px;
+    align-items: center;
+    font-size: 16px;
+    padding-left: 25px;
+    position: fixed;
+    width: 100%;
+    transition: 0.4s;
+}
+
+.nav-liste {
+    list-style-type: none;
+
+}
+
+.nav-liste .liste-item {
+    display: inline-block;
+    padding: 20px 10px;
+}
+
+.navbar a {
+    color: white;
+    text-decoration: none;
+    transition: ease-in;
+}
+
+.navbar a:hover {
+    color: rgba(255, 255, 255, 0.863);
+}
+
+.nav-logo {
+    width: 40%;
+}
