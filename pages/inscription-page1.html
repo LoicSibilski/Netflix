@@ -9,13 +9,15 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="../styles/style.inscriptionp1.css">
+    <link rel="shortcut icon" href="../assets/images/tpoourtenflix.png"> 
 
 </head>
 
 <body>
 
     <div class="header">
-        <div class="logo"><img class="logo" src="../assets/images/tenflix.png"></img>
+        <!-- ne devrait pas renvoyer à la page "home" puisque non inscrit, mais c'est pour l'exercice !-->
+        <div class="logo"><a href="./home.html"><img class="logo" src="../assets/images/tenflix.png"></a></img>
         </div>
         <ul class="listetete">
             <li class="item"><a href="">S'identifier</a></li>
@@ -33,7 +35,7 @@
             <a>Plus que quelques étapes et c'est fini !</a>
             <a>Plus rien à remplir.</a>
         </div>
-
+        <!--Formulaire d'inscription 1/3pages-->
         <div class="form">
             <label aria-placeholder="email">E-mail
                 <input type="email" name="email" id="email">
@@ -65,7 +67,7 @@
                 <li>Préférence de cookies</li>
                 <li>Mentions légales</li>
             </ul>
-            <!--le font ne fonctionne pas (détail)-->
+            <!--le font ne fonctionne pas (détail) Permet de sélectionner la langue-->
             <select name="language" id="language">
                 <option label="francais"><i class="fas fa-globe"></i>Français</option>
                 <option label="english"><i class="fas fa-globe"></i>English</option>

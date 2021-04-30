@@ -7,7 +7,9 @@
     justify-content: space-between;
     height: 70px;
     width: 96%;
-    margin-left: 1em;
+    padding-left: 1em;
+    border-bottom: 1px solid #e6e6e6;
+    padding-right: 1em;
    }
 
 .logo {
