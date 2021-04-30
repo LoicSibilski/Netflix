@@ -1,7 +1,14 @@
-body, html{
+body {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    text-align: center;
     background: #141414;
 }
-.profile-contenu .centered-div {
+
+.profiles-gate-container .centered-div {
     position: absolute;
     top: 0;
     left: 0;
@@ -10,19 +17,24 @@ body, html{
     display: flex;
     justify-content: center;
     align-items: center;
-    flex-direction: column;
 }
 .profile-actions-container {
     text-align: left;
     position: relative;
 }
-.profile-contenu h1, .profile-contenu h2, .profile-contenu h3 {
-    font-weight: 400;
+.profile-actions-container h1 {
+    font-size: 4vw;
+    margin: 0;
 }
+
+
 .profile-actions-container h1 {
     font-size: 4vw;
     margin: 0;
     color: #ffffff;
+}
+.profile-actions-container h1, .profile-actions-container h2, .profile-actions-container h3 {
+    font-weight: 400;
 }
 .profile-actions-container h2 {
     font-size: 1.3vw;
@@ -30,14 +42,26 @@ body, html{
 }
 .profile-metadata {
     display: flex;
-    padding-top: 2em;
-    padding-right: 0px;
-    padding-bottom: 2em;
-    padding-left: 0px;
+    padding: 2em 0;
+
+}
+
+.profile-entry {
     border-top: 1px solid #333;
     border-bottom: 1px solid #333;
+    display: flex;
+    flex-direction: row;
 }
-.profile-metadata , .profile-metadata img {
+
+.profile-metadata .main-profile-avatar {
+    white-space: nowrap;
+    margin-right: 1.5vw;
+    width: 8vw;
+    min-width: 80px;
+    max-width: 180px;
+}
+
+.profile-metadata, .profile-metadata img {
     height: 8vw;
     width: 8vw;
     max-height: 180px;
@@ -45,6 +69,20 @@ body, html{
     min-height: 80px;
     min-width: 80px;
     border-radius: 4px;
+}
+
+.profile-add-parent {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    
+}
+.profile-metadata .profile-entry-inputs {
+    vertical-align: middle;
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
 }
 
 .profile-entry input[type=text] {
@@ -58,4 +96,76 @@ body, html{
     font-size: 1.3vw;
     box-sizing: border-box;
     text-indent: .1vw;
+    
+}
+.profile-entry label {
+    display: inline;
+    
+}
+
+.profile-metadata .add-adult-option, .profile-metadata .add-kids-option, .profile-metadata .add-teen-option {
+    display: flex;
+    align-items: center;
+    margin: 5px 0;
+    position: relative;
+}
+
+.profile-entry input[type=checkbox]+label {
+    border: 1px solid #333;
+    border-radius: 0;
+    display: inline-block;
+    position: relative;
+    margin-right: .5em;
+    font-size: .8vw;
+    width: 2.5em;
+    height: 2.5em;
+}
+
+.profile-metadata .add-kids-marker {
+    font-weight: 400;
+    font-size: 1.3vw;
+    color: #ffffff;
+}
+.kids-profile-tooltip {
+    position: absolute;
+    left: -6em;
+    bottom: 3em;
+    width: 18em;
+    font-size: 1vw;
+    background: #fff;
+    color: #000;
+    padding: .8em;
+    text-align: center;
+    transition: opacity .3s linear 50ms,z-index 1ms linear 350ms;
+    opacity: 0;
+}
+
+.profile-actions-container .profile-button {
+    display: inline-block;
+    margin-right: 20px;
+}
+
+
+.profile-button:focus, .profile-button:hover {
+    color: #fff;
+    border: 1px solid #fff;
+}
+
+.profile-button.preferred-action {
+    background: #fff;
+    color: #000;
+    border: 1px solid #fff;
+    font-weight: 700;
+}
+.profile-button {
+    display: block;
+    margin: 2em 0 1em 0;
+    font-size: 1.2vw;
+    border: 1px solid grey;
+    color: grey;
+    text-transform: uppercase;
+    padding: .5em 1.5em;
+    letter-spacing: 2px;
+    cursor: pointer;
+    background-color: transparent;
 }
