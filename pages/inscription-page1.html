@@ -2,11 +2,15 @@
 
 <!DOCTYPE html>
 <html lang="en">
+  
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
 </head>
+
 <body>
     <header>
         <a href="../assets/images/Netflix-logo.png"></a>
@@ -16,22 +20,49 @@
 
     <div class="formulaireComplet">
         <div>
-        
-        <h3>étape 1 sur 3</h3> <!--A mettre en lettres capitales dans le CSS-->
-        <h1>Créez un mot de passe pour démarrer votre abonnement.</h1>
-        <a>Plus que quelques étapes et c'est fini !</a>
-        <a>Plus rien à remplir.</a>
-    </div>
 
-    <div class="form"> E-mail
-        <label aria-placeholder="email">
-            <input type="email" name="email" id="email">
-        </label>
+            <h3>étape 1 sur 3</h3>
+            <!--A mettre en lettres capitales dans le CSS-->
+            <h1>Créez un mot de passe pour démarrer votre abonnement.</h1>
+            <a>Plus que quelques étapes et c'est fini !</a>
+            <a>Plus rien à remplir.</a>
+        </div>
 
-        <label aria-placeholder="password"> Ajouter un mot de passe
-            <input type="password" name="password" id="email">
-        </label>
+        <div class="form"> E-mail
+            <label aria-placeholder="email">
+                <input type="email" name="email" id="email">
+            </label>
+
+            <label aria-placeholder="password"> Ajouter un mot de passe
+                <input type="password" name="password" id="email">
+            </label>
+
+            <!-- quelque chose de type checkbox-->
+            <label type="checkbox"> Oui, envoyez-moi les offres spéciales de Netflix par e-mail.</label>
+
+            <button type="submit">Continuer</button>
+
+        </div>
+
     </div>
-    </div>
+    <footer>
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css"> 
+        <h3>Des questions ? Appelez le 0805-543-063</h1>
+        <ul>
+            <li>FAQ</li>
+            <li>Centre d'aide</li>
+            <li>Conditions d'utilisation</li>
+            <li>Confidentialité</li>
+            <li>Préférence de cookies</li>
+            <li>Mentions légales</li>
+        </ul>
+        <!--le font ne fonctionne pas (détail)-->
+        <select name="language" id="language">
+            <option label ="francais"><i class="fas fa-globe"></i>Français</option>
+            <option label="english"><i class="fas fa-globe"></i>English</option>
+            
+        </select>
+    </footer>
 </body>
+
 </html>
